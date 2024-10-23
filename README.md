@@ -144,7 +144,7 @@ The "config/base_config.py" defines all the paths of these files, along the basi
     </td>
     <td align="center">
       <a href="https://github.com/Andrea94c">
-        <img src="https://avatars.githubusercontent.com/u/11181598?v=4" width="100px;" alt="Andrea Coletta"/><br />
+        <img src="https://media.licdn.com/dms/image/v2/D4E03AQGQ9iX5WCcviQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1693412211925?e=1735171200&v=beta&t=vu_uxEND67ooyRwcRgTXmBC1LSr_B3ivmBjaklu1KSE" width="100px;" alt="Andrea Coletta"/><br />
         <sub><b>Andrea Coletta</b></sub>
       </a><br />
       <p>Banca d'Italia </p>
