@@ -1,0 +1,41 @@
+agents:
+  CEO:
+    class: CEO
+    actions: 
+    attributes: 
+      llm_model: null 
+      initial_money: null 
+      initial_seashells : 0
+      temperature: null
+      top_p: null
+    order: []
+    
+  trading_branch:
+    class: TradingBranch
+    actions: ## how and when execute the actions. 
+      ask_money:
+        probability: 1
+        modulo_interval: 2  # Action occurs every timestep
+        first_timestep: 0  # Starts from the 1st timestep 
+    attributes: 
+      money_ask: null
+    order: ["ask_money"]
+
+  events: 
+    class: RandomEvents
+    actions:
+    attributes: 
+      market_outcome: null
+    order: ["profit_expectation"]
+
+
+simulation_parameters:
+  start_date: "2024-07-17"  ## simulation start date
+  end_date: "2024-07-17"  ## simulation end date
+  timestep: "1D"  # Timestep of the simulation, daily
+  asset: "Seashells"  # Asset used in the simulation
+  seed: 42  # Random seed for reproducibility
+  agent_order: ["trading_branch", "CEO"] 
+  output_file: "data/simulation_results/"
+  verbose: true
+
