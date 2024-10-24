@@ -1,15 +1,16 @@
 # Financial AI Alignment
 
-This repository contains code and data for the paper "Chat Bankman-Fried: an Exploration of LLM Alignment in Finance"[[1]](#1).   
+This repository contains the code and data accompanying the paper "Chat Bankman-Fried: An Exploration of LLM Alignment in Finance"[[1]](#1).   
 
-The paper proposes a simulation environment with seven pressure variables to test the alignment of LLM models in the high-stake financial situation.
-In particular, this repository contains the code to simulate the financial scenario using several LLMs acting as a agentic-CEO. 
+The paper presents a simulation environment with seven pressure variables designed to test the alignment of large language models (LLMs) in high-stakes financial scenarios. This repository includes the code to simulate these financial situations using several LLMs acting in the role of an agentic CEO.
 
 ## Preliminaries
 
-The code and data are tested on linux system, using using python 3.11. 
+The code and data have been tested on Linux systems using Python 3.11.
 
-Install the codebase as follows:
+### Installation Instructions
+
+To install the codebase, follow these steps:
 
 - Clone the repository:
 ```
@@ -30,14 +31,14 @@ conda activate ai_align
 bash install-dev.sh
 ```
 
-- Create a .env file to place on top of the repository, which should contains your OPENAI_API_KEY, as follows:
+- Create a .env file to place on top of the repository, which should contains your API keys, as follows:
 ```
 OPENAI_API_KEY=this_is_my_private_open_ai_key
 ANTHROPIC_API_KEY=this_is_my_private_anthropic_key
+...
 ```
 
-
-You repo should look like this:
+Your repository structure should look like this:
 ```bash
 .
 ├── .env
@@ -75,54 +76,57 @@ You repo should look like this:
 
 
 
-## Walkthrough Usage
+## Usage Guide
 
-First: check and setup the config files (simconfig/base_config.py), to ensure all the paths are correct and your simulation env is setup correctly.
+### Initial Usage
 
-The notebook "run_simulation.ipynb" contains a details guide to personalize and run a single simulation. Also it shows the output and the simulation results.
+First, be sure all configuration paths are correct in simconfig/base_config.py, so that your simulation env is setup correctly.
+The Jupyter notebook "run_simulation.ipynb" provides detailed instructions for customizing and running individual simulations, along with examples of outputs and results.
 
-## Basic Usage
+### Basic Simulation
 
-The generic usage to test a single simulation scenario:
+To run a single simulation, use the following command:
 ```
 Usage: python src/main.py 
 
 ```
 
-This will create three outputs: 
+This will generate three output files:
 ```
 ── simulation_results_llm.json
 ── simulation_results_logs.json
 ── simulation_results_prompts.json
 ```
 
-## Experiments
+## Running Experiments
 
+### Baseline Experiment
 
-The **baseline** experiments can be replicated using the following command:
+To replicate the baseline experiments, use the following command:
 ```
 Usage: python src/experiments/exec_baseline.py
 ```
+### Full Experiment
 
-While the **full-test** with all the pressure variables can be executed as follows:
+To execute the full simulation with all pressure variables, run:
 ```
 Usage: python src/experiments/exec_full_sim.py
 ```
 
 ## Additional details
 
-The agent regular actions (i.e., executed at regular timesteps) should be defined in the "simconfig/sim_env.yaml", along the env properties.
+- Regular agent actions (triggered at each timestep) are defined in *simconfig/sim_env.yaml* along with environment properties.
 
-The static prompts (i.e., possible messages from users to the CEO) should be defined in the "simconfig/agent_prompts.json" for each agent and action. 
+- Static prompts (potential user interactions with the CEO) are defined in *simconfig/agent_prompts.json* for each agent and action.
 
-The "config/llm_system_prompt.txt" provides the system prompt for the LLM Agent (CEO).
+- The LLM system prompt for the agent (CEO) is provided in *config/llm_system_prompt.txt*.
 
-The "config/base_config.py" defines all the paths of these files, along the basic pressure variables and agent parameters.
-
-
+- All file paths, pressure variables, and agent parameters are configured in *config/base_config.py*.
 
 
-## Authors (Alphabetical order)
+## Authors
+
+The list of authors (in alphabetical order) that contributed to this project:
 
 <table>
   <tr>
@@ -169,7 +173,7 @@ The "config/base_config.py" defines all the paths of these files, along the basi
   </tr>
 </table>
 
-## Reference 
+## References 
 
 <a id="1">[1]</a>  Claudia Biancotti, Carolina Camassa, Andrea Coletta, Oliver Giudice, Aldo Glielmo, "Chat Bankman-Fried: an Exploration of LLM Alignment in Finance", under submission.
 
