@@ -8,6 +8,12 @@ The paper presents a simulation environment with seven pressure variables design
 
 The code and data have been tested on Linux systems using Python 3.11.
 
+## Download experimental data
+
+Download link: https://www.dropbox.com/scl/fi/dknzeueneaxhzl52m5f2e/sim_data.zip?rlkey=b13h7l1r3htfbzxfahw5xzcve&st=3qiwv04p&dl=0
+
+The data should be placed into ```data/simulation_results/```
+
 ### Installation Instructions
 
 To install the codebase, follow these steps:
