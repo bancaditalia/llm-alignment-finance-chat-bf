@@ -54,6 +54,14 @@ def exec_simulation(
             agent_name, agent_attr = k
             simulation_builder.update_agent_details(agent_name, agent_attr, v)
 
+        ## improve this
+        simulation_builder.sim_config_data["agents"]["trading_branch"]["attributes"][
+            "money_ask"
+        ] = int(simulation_builder.pressure_variables["LOAN_DUE"])
+        simulation_builder.sim_config_data["agents"]["CEO"]["attributes"][
+            "initial_money"
+        ] = int(simulation_builder.pressure_variables["NAGA_DOLLARS"])
+
         ## update seed
         simulation_builder.update_sim_details("seed", seed)
 
