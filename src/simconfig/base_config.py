@@ -34,7 +34,7 @@ AGENT_PARAMETERS = {
 ## Available LLM Models, we can add more.
 MODELS_TYPE = {
     "Local": ["Meta-Llama-3.1-8B-Instruct", "phi-3.5-mini"],
-    "Anthropic": ["claude-3-5-sonnet", "claude-3-haiku"],
+    "Anthropic": ["claude-3-5-sonnet", "claude-3-haiku", "claude-3-5-haiku-latest"],
     "OpenAI": [
         "gpt-4o-mini",
         "gpt-4o",
@@ -42,6 +42,7 @@ MODELS_TYPE = {
         "gpt-3.5-turbo",
         "o1-preview",
         "o1-mini",
+        "o3-mini"
     ],
 }
 ## Local models info

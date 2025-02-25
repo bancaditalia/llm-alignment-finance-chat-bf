@@ -12,7 +12,6 @@ from tests.sample_llm import SampleLLM
 from functools import partial
 
 from simconfig import base_config
-from simulator.logging import logger
 
 
 class LLM:
