@@ -169,7 +169,7 @@ The list of authors (in alphabetical order) that contributed to this project:
       <p>Email: <a href="mailto:oliver.giudice@bancaditalia.it:">oliver.giudice@bancaditalia.it</a></p>
     </td>
     <td align="center">
-      <a href="https://github.com/AldoGl">
+      <a href="https://github.com/aldoglielmo">
         <img src="https://avatars.githubusercontent.com/u/13199697?v=4" width="100px;" alt="Aldo Glielmo"/><br />
         <sub><b>Aldo Glielmo</b></sub>
       </a><br />
